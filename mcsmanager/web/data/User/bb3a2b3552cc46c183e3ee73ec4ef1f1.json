@@ -1,0 +1,21 @@
+{
+    "uuid": "bb3a2b3552cc46c183e3ee73ec4ef1f1",
+    "userName": "normaluser",
+    "passWord": "$2a$10$rZ7zVqjH5YGJvKX8vN0qOuYxKqWqXqH5YGJvKX8vN0qOuYxKqWqXq",
+    "passWordType": 1,
+    "salt": "",
+    "permission": 1,
+    "registerTime": "2/14/2026, 3:32:00 AM",
+    "loginTime": "",
+    "instances": [
+        {
+            "instanceUuid": "393023e6-d0ba-4abf-b0d7-d947cad0efe4",
+            "daemonId": "localhost",
+            "nickname": "Production Minecraft Server"
+        }
+    ],
+    "apiKey": "",
+    "isInit": false,
+    "secret": "",
+    "open2FA": false
+}

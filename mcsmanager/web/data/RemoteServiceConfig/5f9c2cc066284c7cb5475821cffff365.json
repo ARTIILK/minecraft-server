@@ -1,0 +1,16 @@
+{
+    "ip": "localhost",
+    "port": 24444,
+    "prefix": "",
+    "remarks": "",
+    "apiKey": "d492296cc25f477c50037c2c9e44eb09ca10b82cfda370a",
+    "remoteMappings": [],
+    "connectOpts": {
+        "multiplex": false,
+        "reconnectionDelayMax": 5000,
+        "timeout": 10000,
+        "reconnection": true,
+        "reconnectionAttempts": 10,
+        "rejectUnauthorized": false
+    }
+}

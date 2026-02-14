@@ -1,0 +1,15 @@
+{
+    "uuid": "6d6f63857be74b2ca79845ac8316418e",
+    "userName": "aurtx",
+    "passWord": "$2a$10$AqZ0Bukw.tiN4sOKyJlbnelAhWPJMHV.VgNmX6z15sBcqJku.r.4q",
+    "passWordType": 1,
+    "salt": "",
+    "permission": 10,
+    "registerTime": "2/14/2026, 3:18:14 AM",
+    "loginTime": "",
+    "instances": [],
+    "apiKey": "",
+    "isInit": false,
+    "secret": "",
+    "open2FA": false
+}

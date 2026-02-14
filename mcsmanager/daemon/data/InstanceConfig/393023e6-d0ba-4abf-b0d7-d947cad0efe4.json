@@ -1,0 +1,67 @@
+{
+    "nickname": "Production Minecraft Server",
+    "startCommand": "bash start.sh",
+    "stopCommand": "stop",
+    "cwd": "/root/server",
+    "ie": "utf-8",
+    "oe": "utf-8",
+    "createDatetime": "2026-02-14T03:22:00.000Z",
+    "lastDatetime": 1771045532249,
+    "type": "universal",
+    "tag": [],
+    "endTime": null,
+    "fileCode": "utf-8",
+    "processType": "general",
+    "updateCommand": "",
+    "runAs": "",
+    "crlf": 2,
+    "category": 0,
+    "basePort": 0,
+    "enableRcon": false,
+    "rconPassword": "",
+    "rconPort": 25575,
+    "rconIp": "127.0.0.1",
+    "actionCommandList": [],
+    "terminalOption": {
+        "haveColor": false,
+        "pty": false,
+        "ptyWindowCol": 164,
+        "ptyWindowRow": 40
+    },
+    "eventTask": {
+        "autoStart": false,
+        "autoRestart": true,
+        "autoRestartMaxTimes": -1,
+        "ignore": false
+    },
+    "java": {
+        "id": ""
+    },
+    "docker": {
+        "containerName": "",
+        "image": "",
+        "ports": [],
+        "extraVolumes": [],
+        "memory": null,
+        "networkMode": "bridge",
+        "networkAliases": [],
+        "cpusetCpus": "",
+        "cpuUsage": null,
+        "maxSpace": null,
+        "io": null,
+        "network": null,
+        "workingDir": "",
+        "env": [],
+        "changeWorkdir": true,
+        "labels": []
+    },
+    "pingConfig": {
+        "ip": "",
+        "port": 25565,
+        "type": 1
+    },
+    "extraServiceConfig": {
+        "openFrpTunnelId": "",
+        "openFrpToken": ""
+    }
+}

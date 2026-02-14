@@ -1,0 +1,29 @@
+{
+    "version": 2,
+    "ip": "",
+    "port": 24444,
+    "prefix": "",
+    "key": "d492296cc25f477c50037c2c9e44eb09ca10b82cfda370a",
+    "maxFileTask": 2,
+    "maxZipFileSize": 200,
+    "language": "en_us",
+    "defaultInstancePath": "",
+    "defaultJavaDataPath": "",
+    "allocatablePortRange": [
+        10010,
+        65500
+    ],
+    "currentAllocatablePort": 10020,
+    "portAssignInterval": 5,
+    "uploadSpeedRate": 0,
+    "downloadSpeedRate": 0,
+    "maxDownloadFromUrlFileCount": 1,
+    "whiteListPanelIp": false,
+    "whiteListPanelIps": [
+        "127.0.0.1",
+        "::1"
+    ],
+    "ssl": false,
+    "sslPemPath": "",
+    "sslKeyPath": ""
+}

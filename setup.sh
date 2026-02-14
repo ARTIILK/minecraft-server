@@ -17,7 +17,7 @@ fi
 
 echo "📦 Installing dependencies..."
 apt-get update
-apt-get install -y openjdk-21-jre-headless screen wget curl git
+apt-get install -y openjdk-21-jre-headless screen wget curl git nodejs npm
 
 echo ""
 echo "👤 Creating minecraft user..."
@@ -59,6 +59,30 @@ fi
 echo ""
 echo "📝 Creating EULA acceptance..."
 echo "eula=true" | sudo -u minecraft tee /opt/minecraft/eula.txt > /dev/null
+
+echo ""
+echo "🚀 Setting up MCSManager..."
+if [ ! -d "/opt/mcsmanager" ]; then
+    mkdir -p /opt/mcsmanager
+    cd /opt/mcsmanager
+    
+    # Download and extract MCSManager
+    wget https://github.com/MCSManager/MCSManager/releases/latest/download/mcsmanager_linux_release.tar.gz
+    tar -xzf mcsmanager_linux_release.tar.gz
+    rm mcsmanager_linux_release.tar.gz
+    
+    echo "✅ Installed MCSManager"
+else
+    echo "✅ MCSManager already exists"
+fi
+
+echo ""
+echo "📋 Restoring MCSManager data..."
+mkdir -p /opt/mcsmanager/daemon/data /opt/mcsmanager/web/data
+cp -r mcsmanager/daemon/data/* /opt/mcsmanager/daemon/data/ 2>/dev/null || true
+cp -r mcsmanager/web/data/* /opt/mcsmanager/web/data/ 2>/dev/null || true
+cp systemd/mcsm/*.service /etc/systemd/system/
+echo "✅ Restored MCSManager data"
 
 echo ""
 echo "🔄 Reloading systemd..."
