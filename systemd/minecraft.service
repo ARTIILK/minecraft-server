@@ -1,0 +1,16 @@
+[Unit]
+Description=Minecraft Server
+After=network.target
+
+[Service]
+User=minecraft
+Group=minecraft
+WorkingDirectory=/opt/minecraft
+# Run in screen session named 'minecraft'
+ExecStart=/usr/bin/screen -DmS minecraft /opt/minecraft/start.sh
+ExecStop=/usr/bin/screen -p 0 -S minecraft -X eval 'stuff "stop"\015'
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

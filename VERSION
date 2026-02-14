@@ -1,0 +1,25 @@
+# Server Version Information
+# This file tracks the versions of all components
+
+SERVER_VERSION=1.21.4
+PAPER_BUILD=232
+PAPER_JAR_URL=https://api.papermc.io/v2/projects/paper/versions/1.21.4/builds/232/downloads/paper-1.21.4-232.jar
+
+# Plugin Versions (as of 2026-02-14)
+GEYSER_VERSION=2.9.3-SNAPSHOT
+FLOODGATE_VERSION=2.2.5-SNAPSHOT
+VIAVERSION=5.7.2-SNAPSHOT
+VIABACKWARDS=5.7.2-SNAPSHOT
+VIAREWIND=4.0.15-SNAPSHOT
+ESSENTIALSX=2.21.2
+LUCKPERMS=5.5.32
+COREPROTECT=23.1
+
+# Java Version
+JAVA_VERSION=21
+
+# Optimization Status
+CROSSPLAY_OPTIMIZED=true
+SIMULATION_DISTANCE=8
+CHUNK_SEND_RATE=100
+CHUNK_LOAD_RATE=150

@@ -1,0 +1,69 @@
+# Minecraft Server .gitignore
+# This excludes large files and temporary data that shouldn't be in version control
+
+# World data (too large for GitHub)
+world/
+world_nether/
+world_the_end/
+*/world/
+*/world_nether/
+*/world_the_end/
+
+# Cache and temporary files
+cache/
+*.tmp
+*.lock
+.console_history
+
+# Logs (can be regenerated)
+logs/
+*.log
+*.log.gz
+
+# User data (privacy)
+usercache.json
+banned-ips.json
+banned-players.json
+ops.json
+whitelist.json
+
+# Plugin data (can contain sensitive info)
+plugins/*/userdata/
+plugins/*/playerdata/
+plugins/CoreProtect/database.db
+plugins/LuckPerms/*.db
+plugins/LuckPerms/*.mv.db
+
+# Libraries (can be re-downloaded)
+libraries/
+versions/
+
+# Paper/Spigot cache
+.paper-remapped/
+.spigot-remapped/
+
+# Server JAR (too large, can be re-downloaded)
+*.jar
+!paper.jar.version
+
+# Crash reports (not needed in repo)
+crash-reports/
+
+# Session data
+session.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Backup files
+*.bak
+*.backup
